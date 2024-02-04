@@ -134,3 +134,8 @@ a:hover {
 	width: 300px;
 	margin: 20px 0;
 }
+
+.Selected_page {
+	color: #1a1a1a;
+	font-weight: bold;
+}
