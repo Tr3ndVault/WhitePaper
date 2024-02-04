@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ideas de Inversión</title>
+    <title>Main Menu</title>
     <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: 'Arial', sans-serif;
-            margin: 20px;
-            padding: 20px;
             background-color: #f4f4f4;
             color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            min-height: 100vh; /* Cambiar de 'height' a 'min-height' */
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu {
+            width: 300px;
+			max-width: 300px;
+            outline: 1px solid #2c3e50;
         }
 
         header {
@@ -20,52 +46,128 @@
             text-align: center;
         }
 
-        section {
-            margin-top: 20px;
+        nav {
+            margin-top: 10px;
         }
 
-        h2 {
-            color: #3498db;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        footer {
-            margin-top: 20px;
-            background-color: #2c3e50;
-            color: #ecf0f1;
-            padding: 10px;
+        ul {
+            list-style-type: none;
+            padding: 0;
             text-align: center;
         }
+
+        li {
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .footer {
+			background-color: #2c3e50;
+			color: #ecf0f1;
+			padding: 1px;
+			text-align: center;
+			margin-top: auto; /* Empuja el footer hacia abajo */
+			width: 100%;
+		}
+
+		.menu header {
+			padding: 10px;
+            text-align: left;
+		}
+
+		.menu img {
+			width: 60px;
+			margin: 25px 30px 10px ; /* Ajusta el margen derecho según sea necesario */
+		}
+
+		.menu .Logo {
+			border-bottom: 1px solid #2c3e50; /* Añade un borde rojo alrededor del contenedor del logo */
+			padding: 2px; /* Agrega un poco de relleno al contenedor del logo */
+			display: flex;
+		}
+		
+		.menu .Logo p {
+			position: absolute; /* Establece la posición como absoluta */
+			top: 40px; /* Ajusta la posición verticalmente al 50% del contenedor */
+			left: 100px; /* Ajusta la posición izquierda según sea necesario */
+			margin: 0;
+			font-size: 30px;
+			font-weight: bold;
+			color: black;
+			text-align: left; /* Ajusta la alineación del texto según sea necesario */
+		}
+
+		.column {
+			flex: 1; /* Hace que cada columna ocupe la misma cantidad de espacio */
+		}
+
+		.main .body {
+			max-width: 500px;
+		}
+
+		.main .title {
+			font-size: 30px;
+			font-weight: bold;
+			color: black;
+			margin-left: 40px;
+		}
+
+		.main .text {
+			margin-left: 40px;
+		}
+
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Ideas de Inversión</h1>
-    </header>
+    <div class="container">
+        <div class="menu">
+			<div class="Logo">
+				<div class="column">
+          	 	 <img src="Logo-circle.png" alt="Logo">
+				</div>
+				<div class="column">
+					<p>Tr3ndVault</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="RoadMap.html">Roadmap</a></li>
+					<li><a href="MintPrice.html">Mint Price</a></li>
+				</ul>
+			</nav>
+        </div>
 
-    <section>
-        <h2>Idea 1: [Nombre de la Idea]</h2>
-        <p>
-            Descripción detallada de la primera idea de inversión. Puedes incluir información sobre el mercado objetivo, el modelo de negocio, los posibles riesgos y beneficios, etc.
-        </p>
-    </section>
 
-    <section>
-        <h2>Idea 2: [Nombre de la Idea]</h2>
-        <p>
-            Descripción detallada de la segunda idea de inversión. Incluye información relevante para que los miembros del grupo comprendan la viabilidad y el potencial de esta idea.
-        </p>
-    </section>
+        <div class="main">
+			<div class="content">
+				<header>
+					<h1>Tr3ndVault Documentation</h1>
+				</header>
+				<div class="body">
+					<div class="title">
+						<p>Welcome to the Tr3ndVault documentation</p>
+					</div>
+					<div class="text">
+						<p>Welcome to the Tr3ndVault documentation. Here you will find all the information you need to get started with our platform and community. Use the menu on the left to navigate through the different sections.</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<footer>
+					<p>Tr3ndVault &copy; 2021</p>
+				</footer>
+			</div>
+        </div>
+    </div>
 
-    <!-- Agrega más secciones según sea necesario -->
-
-    <footer>
-        <p>&copy; 2024 Ideas de Inversión</p>
-    </footer>
+    
 
 </body>
 </html>
