@@ -74,6 +74,11 @@ a {
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	background-image: url('background.png');
+	background-size: cover; /* O ajusta según tus preferencias */
+	background-position: center center; /* O ajusta según tus preferencias */
+	background-attachment: fixed;
+
 }
 
 .container .main img {
