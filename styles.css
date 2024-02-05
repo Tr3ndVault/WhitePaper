@@ -97,8 +97,23 @@ a {
 	margin-left: 40px;
 }
 
+.container .main .subtitle {
+	font-size: 20px;
+	color: #1a1a1a;
+	margin-left: 40px;
+}
+
 .container .main .text {
 	margin-left: 40px;
+}
+
+.container .main ul {
+	margin-left: 30px;
+	list-style-type: circle;
+}
+
+.container .main img {
+	margin: 20px 100px;
 }
 
 .container .main .footer {
